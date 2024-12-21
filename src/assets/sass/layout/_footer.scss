@@ -1,0 +1,145 @@
+/*============= Footer Start Here =======================*/
+.footer-area {
+    margin-top: auto;
+    position: relative;
+    overflow: hidden;
+    background-color: hsl(var(--base));
+
+
+    .form--control {
+        background-color: transparent;
+        border: 1px solid hsl(var(--white)/0.2);
+        border-radius: 6px;
+        color: hsl(var(--white));
+
+
+    }
+
+    ::placeholder {
+        color: hsl(var(--white)/0.7);
+
+    }
+
+
+    .form-group {
+        position: relative;
+
+        i {
+            position: absolute;
+            top: 17px;
+            right: 18px;
+            font-size: 16px;
+            color: hsl(var(--white));
+        }
+    }
+
+    .footer-item {
+        &__desc {
+            color: hsl(var(--white)/0.7);
+        }
+
+        &__logo {
+            margin-bottom: 20px;
+
+            a {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    max-width: 160px;
+                    max-height: 64px;
+                }
+            }
+        }
+
+        &__title {
+            color: hsl(var(--white) /0.7);
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        h5 {
+            color: hsl(var(--white));
+        }
+
+        .social-list {
+
+            @include md-screen {
+                margin-top: 20px;
+            }
+
+            @include msm-screen {
+                margin-top: 15px;
+            }
+        }
+
+    }
+
+    // Footer List Item
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        margin: -5px 0;
+
+        &__item {
+            display: block;
+            padding: 5px 0;
+        }
+
+        &__link {
+            position: relative;
+            color: hsl(var(--white)/0.7);
+
+            &:hover {
+                color: hsl(var(--white));
+                margin-left: 4px;
+            }
+        }
+    }
+
+    .extra {
+        color: hsl(var(--white));
+    }
+
+    // Footer Contact
+    .footer-contact-menu {
+        margin: -6px 0;
+
+        &__item {
+            display: flex;
+            padding: 6px 0;
+
+            p {
+                color: hsl(var(--white)/0.7);
+            }
+
+            &-icon {
+                width: 15px;
+                color: hsl(var(--base));
+                font-size: 20px;
+            }
+
+            &-content {
+                width: calc(100% - 15px);
+                padding-left: 15px;
+            }
+        }
+    }
+
+    .copyright {
+        padding: 18px 0;
+        margin-top: 60px;
+        background: rgba(255, 255, 255, 0.07);
+
+        p {
+            color: hsl(var(--white));
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+// ============= Footer End Here =======================

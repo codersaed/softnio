@@ -1,0 +1,80 @@
+<!-- meta tags and other links -->
+@@include('../partials/_template-top.html')
+
+
+<!--========================== add to card start ==========================-->
+<section class="text-dark">
+    <div class="container my-5">
+        <!-- Product Section -->
+        <div class="card p-4">
+            <div class="row g-4">
+                <!-- Image -->
+                <div class="col-lg-6">
+                    <img id="main-thumbnail" src="assets/images/element/img2.png" alt="Smartwatch" class="img-fluid rounded">
+                </div>
+
+                <!-- Details -->
+                <div class="col-lg-6 my-auto">
+                    <h1 class="h3">Classy Modern Smart Watch</h1>
+                    <div class="d-flex align-items-center mt-2">
+                        <p class="text-muted text-decoration-line-through me-2">$99.00</p>
+                        <p class="h4 text-success">$79.00</p>
+                    </div>
+                    <p class="mt-3 text-muted">This smartwatch is equipped with the latest features, sleek design, and unmatched usability. Perfect for all your daily needs.</p>
+
+                    <div class="mt-4">
+                        <h5>Band Color</h5>
+                        <div class="d-flex gap-2 mt-2">
+                            <button data-color="black" class="color-button one" data-img="img2.png"></button>
+                            <button data-color="purple" class="color-button two" data-img="img3.png"></button>
+                            <button data-color="blue" class="color-button three" data-img="img1.png"></button>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h5>Wrist Size</h5>
+                        <select id="size-selector" class="form-select mt-2">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                        </select>
+                    </div>
+
+                    <button id="add-to-cart" class="btn btn-primary mt-4">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="floating-checkout" class="d-flex">
+        <span id="cart-count">0</span> Items in Cart
+    </div>
+
+    <div id="overlay"></div>
+    <div id="cart-modal" class="p-4">
+        <h2 class="h5 mb-3">Your Cart</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-between mt-4">
+            <button id="continue-shopping" class="btn btn-secondary">Continue Shopping</button>
+            <button id="checkout" class="btn btn-success">Checkout</button>
+        </div>
+    </div>
+</section>
+<!--========================== add to card end ==========================-->
+
+
+
+@@include('../partials/_template-bottom.html')
